@@ -415,7 +415,6 @@ describe('Test Case 6: Static and Dynamic Web Table Validation', () => {
 
     // --------------------------------------------------
     // Step 4: Locate the Dynamic Web Table
-    // using its Memory header
     // --------------------------------------------------
     cy.contains(
       'th',
