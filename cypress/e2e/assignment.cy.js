@@ -662,7 +662,7 @@ describe('Test case 10 :  Show and select hidden checkbox', () => {
   })
 })
 
-describe('Drag and Drop Feature', () => {
+describe('Test case 11: Drag and Drop Feature', () => {
   it('Drag an item to a drop target', () => {
     cy.visit('https://testautomationpractice.blogspot.com/');
 
@@ -678,14 +678,18 @@ describe('Drag and Drop Feature', () => {
     cy.get('#draggable')
       .trigger('mousedown',{which: 1});
 
+    //Step 3 : Drop it onto the target area. 
     cy.get('#droppable')
       .trigger('mousemove')
       .trigger('mouseup', { force: true });
 
+    //Step 4. Verify the drop success message is displayed.
     cy.get('#droppable')
       .should('contain.text', 'Dropped!');
   });
 });
+
+
 
 
 
