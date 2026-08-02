@@ -1,0 +1,13 @@
+export const data = {  
+    Name : "Gayathri",
+    Email : "gayathri@test.com",
+    Phone : "987654321",
+    Address : "Dubai, UAE",
+    Gender : "male",
+    Day : "monday",
+    Country: "India",
+    Colors:"Blue",
+    date1:"12/12/1995",
+    startdate:"12/12/1996",
+    enddate: "12/12/1997"
+}
