@@ -14,5 +14,8 @@
     "@cypress/xpath": "^2.0.3",
     "cypress": "^15.18.0",
     "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "mysql2": "^3.23.2"
   }
 }

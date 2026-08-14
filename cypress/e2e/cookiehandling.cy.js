@@ -6,8 +6,8 @@ describe('Cookie handling',()=>{
         cy.get('[id="getCookie"]  [class="set-a-cookie btn btn-success"]').click();
         cy.getCookies().should('have.length.at.least', 1);
         cy.getCookies('token').then((cookies)=>{
-                expect(cookies[0]).to.have.property("Name","token")
-                expect(cookies[0]).to.have.property("Value","123ABC")
+                expect(cookies[0]).to.have.property("name","token")
+                expect(cookies[0]).to.have.property("value","123ABC")
 
         })
     })

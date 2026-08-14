@@ -1,0 +1,13 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: cypress-mysql-demo
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: demo_db
+      MYSQL_USER: cypress_user
+      MYSQL_PASSWORD: cypress_password
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
